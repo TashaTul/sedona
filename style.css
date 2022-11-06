@@ -424,6 +424,7 @@ advantages-blok-img-3 {
   padding: 0;
   padding-top: 94px;
 
+  text-align: center;
   font-family: 'PT Sans';
   font-style: bold;
   font-weight: 700;
@@ -437,6 +438,7 @@ advantages-blok-img-3 {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 
   margin-bottom: 46px;
 }
@@ -444,47 +446,60 @@ advantages-blok-img-3 {
 /* Форма подписки */
 
 .subscribe-form {
-  display: grid;
-  grid-template-columns: 1fr 200px;
+  display: flex;
+  justify-content: center;
 }
+.subscribe-name {
 
-.subscribe-name .subscribe-input {
-  border-radius: 10px 0 0 10px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+
+
 }
 
 .subscribe-input {
-  width: 100%;
+  width: 556px;
   margin: 0;
-  padding: 8px 20px;
+  padding: 20px 20px;
 
-  background-color: #f2f2f2;
-  border: 2px solid transparent;
+  background-color: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  border: 2px solid #F2F2F2;
 
-  font-family: inherit;
-  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000;
 }
 
+.subscribe-input[placeholder] {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+
 .button-subscribe {
-  display: inline-block;
+  width: 200px;
   margin: 0;
+  padding: 20px 20px;
+
+  background-color: #83B3D3;
+  border-radius: 0px 10px 10px 0px;
+  border: 2px solid #83B3D3;
+
   text-align: center;
-
-  color: #ffffff;
-  background-color: #83b3d3;
-  border: none;
-  border-radius: 0 10px 10px 0;
-
-  font-family: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
+  color: #fff;
 }
-
-/* Футер  */
-
-
-
-
 
 
