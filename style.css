@@ -161,10 +161,44 @@ img {
   margin-left: auto;
 }
 
+.main-index {
+ flex-grow: 1;
+}
+
 /* Главный экран состоящий из множественных изображений */
 
-.main-section-fotos {
-  width: 1200px;
-  height: 485px;
-  background-color: aqua;
+/* .main-section {
+  min-height: 485px;
+
+  background-color: rgb(200, 253, 255);
+  background-repeat: no-repeat;
+  background-image:
+              url(./img/welcome-sedona.svg),
+              url(./img/bottom-main.svg),
+              url(./img/index-background.png);
+  background-size:
+              auto auto,
+              100% auto,
+              cover;
+  background-position:
+              50% calc(50% - 16px),
+              50% 100%,
+              50% 50%;
+} */
+
+/* ----
+Вариант от академии, выше. У обоих вариантов есть недостаток, с боку и с низу у декоративного белого элемента есть небольшая цветная полоска. В своем варианте я уменьшила ширину главного фото на 2px, визуально стало лучше
+----- */
+
+
+.main-section {
+  max-width: 1200px;
+  min-height: 485px;
+
+  background: url(./img/welcome.svg) no-repeat top 51px center / 188px,
+              url(./img/to_the_gorgeous.svg) no-repeat top 107px center / 256px,
+              url(./img/sedona.svg) no-repeat top 190px center / 457px,
+              url(./img/bottom-main.svg) no-repeat center bottom / 1200px,
+              url(./img/index-background.png) no-repeat center center / 1198px;
 }
+
