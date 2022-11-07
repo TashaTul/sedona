@@ -61,6 +61,13 @@ img {
   justify-content: space-between;
 }
 
+.navigation-logo {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-logo-img {
   display: block;
   margin-left: 70px;
@@ -71,13 +78,21 @@ img {
 
 .navigation-menu {
   list-style-type: none;
+  text-decoration: none;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
-  width: 331px;
+
+  width: 450px;
   padding: 0 17px;
+  margin: 0;
+}
+
+.navigation-item {
+  margin-right: 35px;
 }
 
 .navigation-link {
@@ -160,6 +175,8 @@ img {
   padding: 9px 15px;
   border-radius: 4px;
   margin-left: 30px;
+
+
 }
 
 .main-index {
@@ -196,11 +213,12 @@ img {
   max-width: 1200px;
   min-height: 485px;
 
-  background: url(./img/welcome.svg) no-repeat top 51px center / 188px,
-              url(./img/to_the_gorgeous.svg) no-repeat top 107px center / 256px,
-              url(./img/sedona.svg) no-repeat top 190px center / 457px,
-              url(./img/bottom-main.svg) no-repeat center bottom / 1200px,
-              url(./img/index-background.png) no-repeat center center / 1198px;
+  background:
+  url(./img/welcome.svg) no-repeat top 51px center / 188px,
+  url(./img/to_the_gorgeous.svg) no-repeat top 107px center / 256px,
+  url(./img/sedona.svg) no-repeat top 190px center / 457px,
+  url(./img/bottom-main.svg) no-repeat 50% 100% / 1200px auto,
+  url(./img/index-background.png) no-repeat 50% 50% / 1198px 483px;
 }
 
 /*  Основное содержание страницы */
@@ -482,8 +500,6 @@ advantages-blok-img-3 {
   color: rgba(0, 0, 0, 0.6);
 }
 
-
-
 .button-subscribe {
   width: 200px;
   margin: 0;
@@ -500,6 +516,49 @@ advantages-blok-img-3 {
   line-height: 26px;
   text-transform: uppercase;
   color: #fff;
+}
+
+/* Футер */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-list {
+  list-style-type: none;
+  display: flex;
+  /* justify-content: space-between; */
+  margin-left: 52px;
+  flex-grow: 1;
+}
+.button-footer {
+  display: block;
+  padding: 20px 20px;
+  background-color: aqua;
+  margin-right: 20px;
+}
+
+.footer-contacts-address {
+  flex-grow: 2;
+}
+
+.footer-contacts-address-phone {
+  text-decoration: none;
+  color: #333;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.contacts-logo {
+  flex-grow: 1;
 }
 
 
